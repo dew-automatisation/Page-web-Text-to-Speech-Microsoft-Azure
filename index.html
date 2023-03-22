@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Text to Speech de Microsoft Azure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tester les voix de l'API Text to Speech de Microsoft Azure</h1>
+        <div class="content">
+            <div class="left-column">
+                <div class="input-group">
+                    <label for="apiKeyInput">Entrez votre clé API :</label>
+                    <input id="apiKeyInput" type="text" placeholder="Entrez votre clé API ici..." value="API KEY">
+                </div>
+                <div class="input-group">
+                    <label for="regionInput">Entrez la région de l'API :</label>
+                    <input id="regionInput" type="text" placeholder="Entrez la région de l'API ici..." value="REGION API">
+                </div>
+                <button id="loadVoicesButton" type="button">Charger les voix</button>
+                <div class="input-group">
+                    <label for="voiceSelect">Sélectionnez une voix :</label>
+                    <select id="voiceSelect"></select>
+                </div>
+            </div>
+            <div class="right-column">
+                <form id="textToSpeechForm">
+                    <div class="input-group">
+                        <label for="textInput">Saisissez votre texte :</label>
+                        <textarea id="textInput" rows="26" cols="100" placeholder="Tapez votre texte ici..."></textarea>
+                    </div>
+                    <button type="submit">Convertir en MP3</button>
+                    <a id="downloadButton" href="#" download="output.mp3" style="display:none;">Télécharger</a>
+                </form>
+                <audio id="audioPlayer" controls style="display:none;"></audio>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
