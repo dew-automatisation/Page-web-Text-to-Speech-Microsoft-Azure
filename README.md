@@ -5,4 +5,4 @@ Generer une voix off a partir de texte avec l'api de Microsoft Azure.
 
 Il suffit de rentrer votre clé API et regions.
 
-![Screenshot](screen.jpg)
+![Screenshot](screenshot.jpg)
