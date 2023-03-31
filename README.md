@@ -5,6 +5,8 @@ Generer une voix off a partir de texte avec l'api de Microsoft Azure.
 
 Il suffit de rentrer votre clé API et regions.
 
+Vous pouvez le tester directement ici : https://devenirentrepreneurweb.fr/tools/azuretts/
+
 ![Screenshot](screenshot.jpg)
 
 Mes liens :
